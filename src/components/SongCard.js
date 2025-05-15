@@ -1,4 +1,3 @@
-import React from 'react';
 import usePlayer from '../hooks/usePlayer';
 
 const SongCard = ({ title, artist, image, src, shadowColor }) => {

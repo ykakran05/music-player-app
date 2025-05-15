@@ -6,10 +6,10 @@ const PlayerProvider = ({ children, songs }) => {
   const [currentSong, setCurrentSong] = useState({
     title: "Chaff & Dust",
     artist: "Hyonna",
-    src: "assets/audio/chaff-and-dust.mp3",
-    image: "assets/images/chaff-&-dust.png", // Added image field
+    src: "assets/audio/Chaff.mp3",
+    image: "assets/images/chaff-&-dust.png", 
   });
-  const [currentSongIndex, setCurrentSongIndex] = useState(5); // Index of "Chaff & Dust"
+  const [currentSongIndex, setCurrentSongIndex] = useState(5); 
   const [isPlaying, setIsPlaying] = useState(true);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
