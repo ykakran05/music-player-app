@@ -4,16 +4,16 @@ const PlayerContext = createContext();
 
 const PlayerProvider = ({ children, songs }) => {
   const [currentSong, setCurrentSong] = useState({
-    title: "Chaff & Dust",
-    artist: "Hyonna",
-    src: "assets/audio/Chaff.mp3",
-    image: "assets/images/chaff-&-dust.png", 
+    title: "Believer",
+    artist: "Imagine Dragons",
+    src: "assets/audio/Believer.mp3",
+    image: "assets/images/believer.png", 
   });
-  const [currentSongIndex, setCurrentSongIndex] = useState(5); 
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [currentSongIndex, setCurrentSongIndex] = useState(0); 
+  const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const audioRef = useRef(new Audio("assets/audio/chaff-and-dust.mp3"));
+  const audioRef = useRef(new Audio("assets/audio/Believer.mp3"));
 
   useEffect(() => {
     const audio = audioRef.current;
